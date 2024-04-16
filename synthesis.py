@@ -36,12 +36,15 @@ quality_report = evaluate_quality(
 ) 
  
 # saving metadata 
- 
-def save_metadata(metadata):
+
+def save_metadata(metadata): 
+    path = os.getcwd() 
+    filename = '/metadata.json'
+    complete_path = path + filename
     if os.path.exists('metadata.json'):
         os.remove('metadata.json')
     else:
-        metadata.save_to_json('/home/danilo/Documentos/prototype_synthetic_data_python/metadata.json') 
+        metadata.save_to_json(complete_path) 
 
 save_metadata(metadata)
 
