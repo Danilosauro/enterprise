@@ -1,0 +1,31 @@
+{
+    "columns": {
+        "name": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "address": {
+            "sdtype": "id"
+        },
+        "email": {
+            "sdtype": "email",
+            "pii": true
+        },
+        "phone_number": {
+            "sdtype": "phone_number",
+            "pii": true
+        },
+        "birthdate": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "blood_type": {
+            "sdtype": "categorical"
+        },
+        "gender": {
+            "sdtype": "categorical"
+        }
+    },
+    "primary_key": "address",
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}
