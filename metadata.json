@@ -26,6 +26,6 @@
             "sdtype": "categorical"
         }
     },
-    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
-    "primary_key": "address"
+    "primary_key": "address",
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
 }

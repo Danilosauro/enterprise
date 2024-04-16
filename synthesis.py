@@ -1,5 +1,5 @@
 import pandas as pd
-
+import os
 from sdv.single_table import GaussianCopulaSynthesizer
 from sdv.metadata import SingleTableMetadata
 from sdv.lite import SingleTablePreset
@@ -36,8 +36,14 @@ quality_report = evaluate_quality(
 ) 
  
 # saving metadata 
+ 
+def save_metadata(metadata):
+    if os.path.exists('metadata.json'):
+        os.remove('metadata.json')
+    else:
+        metadata.save_to_json('/home/danilo/Documentos/prototype_synthetic_data_python/metadata.json') 
 
-metadata.save_to_json('/home/danilo/Documentos/prototype_synthetic_data_python/metadata.json')
+save_metadata(metadata)
 
 # generating graphs 
 
