@@ -6,9 +6,10 @@ from sdv.lite import SingleTablePreset
 from sdv.evaluation.single_table import evaluate_quality 
 from sdv.evaluation.single_table import get_column_plot 
 
-# readind database to synthetis 
+# read database
 
 real_data = pd.read_csv('fake_data.csv') 
+occurrences = len(real_data.index) 
 
 # getting metadata 
 
@@ -20,7 +21,7 @@ print(metadata)
 
 synthesizer = GaussianCopulaSynthesizer(metadata)
 synthesizer.fit(real_data)
-synthetic_data = synthesizer.sample(1000)
+synthetic_data = synthesizer.sample(occurrences)
 
 
 # generating synthetic dataset without hashes 
