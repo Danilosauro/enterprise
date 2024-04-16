@@ -27,7 +27,7 @@ def save_data_to_csv(data, filename):
             writer.writerow(record)
 
 if __name__ == "__main__":
-    num_records = 1000
+    num_records = 10000
     fake_data = generate_fake_data(num_records)
 
     csv_filename = "fake_data.csv"
