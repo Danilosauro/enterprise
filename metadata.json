@@ -1,0 +1,52 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "primary_key": "ID",
+    "columns": {
+        "ID": {
+            "sdtype": "id"
+        },
+        "first": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "last": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "job": {
+            "sdtype": "categorical"
+        },
+        "age": {
+            "sdtype": "numerical"
+        },
+        "region": {
+            "sdtype": "categorical"
+        },
+        "id_dpt": {
+            "sdtype": "categorical"
+        },
+        "departement": {
+            "sdtype": "categorical"
+        },
+        "cb_provider": {
+            "sdtype": "categorical"
+        },
+        "name": {
+            "sdtype": "unknown",
+            "pii": true
+        },
+        "entry_date": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S.%f"
+        },
+        "fidelity_points": {
+            "sdtype": "numerical"
+        },
+        "priority_encoded": {
+            "sdtype": "categorical"
+        },
+        "priority": {
+            "sdtype": "categorical"
+        }
+    }
+}
